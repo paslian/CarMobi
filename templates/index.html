@@ -1,0 +1,122 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include 'components/head.html' %}
+    <title>Pendeteksi Mobil Bekas</title>
+  </head>
+  <body>
+    {% include 'components/navbar.html' %}
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner carousel-main">
+        <div class="carousel-item active">
+          <img
+            src="https://www.toyota.astra.co.id/sites/default/files/2023-11/Product%20Banner%20BZ4K%201293%20x%20628-01.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://dealer-toyota.co.id/wp-content/uploads/2021/06/home-banner-voxy-2022-1293x820-1.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.toyota.astra.co.id/sites/default/files/2023-09/homebanner%20raize%20desktop%201293x628.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">How to Use</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <iframe
+                src="https://drive.google.com/file/d/1Eq8zplftlBRA4ec5qDkARAP_2VVnQnlw/preview"
+                width="100%"
+                height="250"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Login & Register</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <iframe
+                src="https://drive.google.com/file/d/1KGbQI3cepPNY_hs8DC5V3Fa5bsi6BIAP/preview"
+                width="100%"
+                height="250"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Price Predict</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <iframe
+                src="https://drive.google.com/file/d/1KHwtx_3I1PdOx2G5EsGbMM2N1GHO36p9/preview"
+                width="100%"
+                height="250"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Car Model Predict</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <iframe
+                src="https://drive.google.com/file/d/13sXPDgjCmIdE3AVU0JAcoeFomtN70EU1/preview"
+                width="100%"
+                height="250"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Car Listing</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include '/components/footer.html' %} {% include 'components/scripts.html'
+    %}
+  </body>
+</html>
