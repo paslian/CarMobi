@@ -128,10 +128,20 @@ $(document).ready(function () {
       contentType: "application/json",
       data: JSON.stringify({ features: features }),
       success: function (response) {
+        let prediction = response.prediction[0];
+
+        if (prediction < 10000000) {
+          $("#result").text(
+            "Terjadi kesalahan dalam prediksi. Nilai prediksi tidak valid."
+          );
+          return;
+        }
+
         let rupiah = new Intl.NumberFormat("id-ID", {
           style: "currency",
           currency: "IDR",
-        }).format(response.prediction[0]);
+        }).format(prediction);
+
         $("#result").text("Prediksi Harga: " + rupiah);
 
         // Setelah prediksi sukses, perbarui kuota prediksi
